@@ -115,3 +115,5 @@ replace github.com/go-gost/gosocks5 => github.com/gost-dev/gosocks5 v0.0.0-20230
 replace github.com/go-gost/relay => github.com/gost-dev/relay v0.0.0-20230914031411-48fbef7fecda
 
 replace github.com/go-gost/tls-dissector => github.com/gost-dev/tls-dissector v0.0.0-20230914040412-86a6040d3bd1
+
+replace github.com/go-gost/x => github.com/gost-dev/x v0.0.0-20230914044449-9b6d29dafc23

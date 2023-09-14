@@ -97,8 +97,6 @@ github.com/go-gost/gosocks4 v0.0.1 h1:+k1sec8HlELuQV7rWftIkmy8UijzUt2I6t+iMPlGB2
 github.com/go-gost/gosocks4 v0.0.1/go.mod h1:3B6L47HbU/qugDg4JnoFPHgJXE43Inz8Bah1QaN9qCc=
 github.com/go-gost/plugin v0.0.0-20230418123101-d221a4ec9a98 h1:dOtNcxZbMDwtowa8b91nK2JcTL1lG0EIv0sXqSbvTc4=
 github.com/go-gost/plugin v0.0.0-20230418123101-d221a4ec9a98/go.mod h1:IGQawP0E9B36VZ0AfDOpBK23bW4rOSiHtnU7mtafpAM=
-github.com/go-gost/x v0.0.0-20230521074751-46db8480faa9 h1:aZ4AgnEeSQwTUnfzQ3UOf4ozpnsElWjUDbPrHRAP3u0=
-github.com/go-gost/x v0.0.0-20230521074751-46db8480faa9/go.mod h1:JPmqhcoC0mbWtIm+4N6du5w2KUaST4Wfez6J4bP+MDQ=
 github.com/go-kit/kit v0.8.0/go.mod h1:xBxKIO96dXMWWy0MnWVtmwkA9/13aqxPnvrjFYMA2as=
 github.com/go-kit/kit v0.9.0/go.mod h1:xBxKIO96dXMWWy0MnWVtmwkA9/13aqxPnvrjFYMA2as=
 github.com/go-kit/log v0.1.0/go.mod h1:zbhenjAZHb184qTLMA9ZjW7ThYL0H2mk7Q6pNt4vbaY=
@@ -211,6 +209,8 @@ github.com/gost-dev/relay v0.0.0-20230914031411-48fbef7fecda h1:Rk3kpH622V+hub5r
 github.com/gost-dev/relay v0.0.0-20230914031411-48fbef7fecda/go.mod h1:rPSOxO8KekwNuIfbicswzDZeJKENNm7QwHG5xQsvoC8=
 github.com/gost-dev/tls-dissector v0.0.0-20230914040412-86a6040d3bd1 h1:LZmZ057tDFayWQ+5QqsnRECDgVC9ZQ1Ek6ATN7WQ8Bc=
 github.com/gost-dev/tls-dissector v0.0.0-20230914040412-86a6040d3bd1/go.mod h1:jI+LKSa7XJ1gf4Tv44J/HlYrDTUlg1bxuco2vDky2Dc=
+github.com/gost-dev/x v0.0.0-20230914044449-9b6d29dafc23 h1:nkRVktzaYRbrNBJHRrzBZ8BIdZNgOs8Yj65UxKLVQco=
+github.com/gost-dev/x v0.0.0-20230914044449-9b6d29dafc23/go.mod h1:n1LWAMiGi9jALW9glPbpjjCIYM8FdLVoGbbnIVd9e2I=
 github.com/hashicorp/golang-lru v0.5.0/go.mod h1:/m3WP610KZHVQ1SGc6re/UDhFvYD7pJ4Ao+sR/qLZy8=
 github.com/hashicorp/golang-lru v0.5.1/go.mod h1:/m3WP610KZHVQ1SGc6re/UDhFvYD7pJ4Ao+sR/qLZy8=
 github.com/hashicorp/hcl v1.0.0 h1:0Anlzjpi4vEasTeNFn2mLJgTSwt0+6sfsiTG8qcWGx4=

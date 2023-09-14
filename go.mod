@@ -1,6 +1,6 @@
-module github.com/go-gost/x
+module github.com/gost-dev/x
 
-go 1.20
+go 1.21
 
 require (
 	github.com/alecthomas/units v0.0.0-20211218093645-b94a6e3cc137
@@ -13,6 +13,7 @@ require (
 	github.com/go-gost/plugin v0.0.0-20230418123101-d221a4ec9a98
 	github.com/go-gost/relay v0.4.0
 	github.com/go-gost/tls-dissector v0.0.2-0.20220408131628-aac992c27451
+	github.com/go-gost/x v0.0.0-20230521074751-46db8480faa9
 	github.com/go-redis/redis/v8 v8.11.5
 	github.com/gobwas/glob v0.2.3
 	github.com/golang/snappy v0.0.4

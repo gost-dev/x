@@ -22,9 +22,9 @@ import (
 	"github.com/go-gost/core/handler"
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
-	xio "github.com/go-gost/x/internal/io"
-	netpkg "github.com/go-gost/x/internal/net"
-	sx "github.com/go-gost/x/internal/util/selector"
+	xio "github.com/gost-dev/x/internal/io"
+	netpkg "github.com/gost-dev/x/internal/net"
+	sx "github.com/gost-dev/x/internal/util/selector"
 	"github.com/go-gost/x/registry"
 )
 

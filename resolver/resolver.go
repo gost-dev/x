@@ -9,7 +9,7 @@ import (
 	"github.com/go-gost/core/chain"
 	"github.com/go-gost/core/logger"
 	resolverpkg "github.com/go-gost/core/resolver"
-	resolver_util "github.com/go-gost/x/internal/util/resolver"
+	resolver_util "github.com/gost-dev/x/internal/util/resolver"
 	"github.com/go-gost/x/resolver/exchanger"
 	"github.com/miekg/dns"
 	"google.golang.org/grpc"

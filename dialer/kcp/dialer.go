@@ -10,7 +10,7 @@ import (
 	"github.com/go-gost/core/dialer"
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
-	kcp_util "github.com/go-gost/x/internal/util/kcp"
+	kcp_util "github.com/gost-dev/x/internal/util/kcp"
 	"github.com/go-gost/x/registry"
 	"github.com/xtaci/kcp-go/v5"
 	"github.com/xtaci/smux"

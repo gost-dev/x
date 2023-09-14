@@ -8,8 +8,8 @@ import (
 
 	"github.com/go-gost/core/metadata"
 	"github.com/go-gost/core/metrics"
-	xnet "github.com/go-gost/x/internal/net"
-	"github.com/go-gost/x/internal/net/udp"
+	xnet "github.com/gost-dev/x/internal/net"
+	"github.com/gost-dev/x/internal/net/udp"
 	xmetrics "github.com/go-gost/x/metrics"
 )
 

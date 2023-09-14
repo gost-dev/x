@@ -11,7 +11,7 @@ import (
 	"github.com/go-gost/core/dialer"
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
-	icmp_pkg "github.com/go-gost/x/internal/util/icmp"
+	icmp_pkg "github.com/gost-dev/x/internal/util/icmp"
 	"github.com/go-gost/x/registry"
 	"github.com/quic-go/quic-go"
 	"golang.org/x/net/icmp"

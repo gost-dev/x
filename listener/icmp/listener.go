@@ -8,7 +8,7 @@ import (
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
 	admission "github.com/go-gost/x/admission/wrapper"
-	icmp_pkg "github.com/go-gost/x/internal/util/icmp"
+	icmp_pkg "github.com/gost-dev/x/internal/util/icmp"
 	limiter "github.com/go-gost/x/limiter/traffic/wrapper"
 	metrics "github.com/go-gost/x/metrics/wrapper"
 	"github.com/go-gost/x/registry"

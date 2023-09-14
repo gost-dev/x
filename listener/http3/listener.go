@@ -8,7 +8,7 @@ import (
 	"github.com/go-gost/core/listener"
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
-	xnet "github.com/go-gost/x/internal/net"
+	xnet "github.com/gost-dev/x/internal/net"
 	mdx "github.com/go-gost/x/metadata"
 	"github.com/go-gost/x/registry"
 	"github.com/quic-go/quic-go"

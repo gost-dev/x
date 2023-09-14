@@ -9,8 +9,8 @@ import (
 
 	"github.com/go-gost/core/admission"
 	"github.com/go-gost/core/metadata"
-	xnet "github.com/go-gost/x/internal/net"
-	"github.com/go-gost/x/internal/net/udp"
+	xnet "github.com/gost-dev/x/internal/net"
+	"github.com/gost-dev/x/internal/net/udp"
 )
 
 var (

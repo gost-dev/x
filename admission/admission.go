@@ -11,8 +11,8 @@ import (
 
 	admission_pkg "github.com/go-gost/core/admission"
 	"github.com/go-gost/core/logger"
-	"github.com/go-gost/x/internal/loader"
-	"github.com/go-gost/x/internal/matcher"
+	"github.com/gost-dev/x/internal/loader"
+	"github.com/gost-dev/x/internal/matcher"
 	"google.golang.org/grpc"
 )
 

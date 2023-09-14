@@ -25,7 +25,7 @@ import (
 	"github.com/go-gost/x/config"
 	xhosts "github.com/go-gost/x/hosts"
 	xingress "github.com/go-gost/x/ingress"
-	"github.com/go-gost/x/internal/loader"
+	"github.com/gost-dev/x/internal/loader"
 	xconn "github.com/go-gost/x/limiter/conn"
 	xrate "github.com/go-gost/x/limiter/rate"
 	xtraffic "github.com/go-gost/x/limiter/traffic"

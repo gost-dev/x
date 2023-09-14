@@ -6,7 +6,7 @@ import (
 
 	mdata "github.com/go-gost/core/metadata"
 	mdutil "github.com/go-gost/core/metadata/util"
-	kcp_util "github.com/go-gost/x/internal/util/kcp"
+	kcp_util "github.com/gost-dev/x/internal/util/kcp"
 )
 
 type metadata struct {

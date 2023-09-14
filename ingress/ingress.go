@@ -11,7 +11,7 @@ import (
 
 	ingress_pkg "github.com/go-gost/core/ingress"
 	"github.com/go-gost/core/logger"
-	"github.com/go-gost/x/internal/loader"
+	"github.com/gost-dev/x/internal/loader"
 	"google.golang.org/grpc"
 )
 

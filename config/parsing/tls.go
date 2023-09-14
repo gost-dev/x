@@ -16,7 +16,7 @@ import (
 
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/x/config"
-	tls_util "github.com/go-gost/x/internal/util/tls"
+	tls_util "github.com/gost-dev/x/internal/util/tls"
 )
 
 var (

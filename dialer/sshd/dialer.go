@@ -8,7 +8,7 @@ import (
 
 	"github.com/go-gost/core/dialer"
 	md "github.com/go-gost/core/metadata"
-	ssh_util "github.com/go-gost/x/internal/util/ssh"
+	ssh_util "github.com/gost-dev/x/internal/util/ssh"
 	"github.com/go-gost/x/registry"
 	"golang.org/x/crypto/ssh"
 )

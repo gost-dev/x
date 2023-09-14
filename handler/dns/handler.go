@@ -15,7 +15,7 @@ import (
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
 	xchain "github.com/go-gost/x/chain"
-	resolver_util "github.com/go-gost/x/internal/util/resolver"
+	resolver_util "github.com/gost-dev/x/internal/util/resolver"
 	"github.com/go-gost/x/registry"
 	"github.com/go-gost/x/resolver/exchanger"
 	"github.com/miekg/dns"

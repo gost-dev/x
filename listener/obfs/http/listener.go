@@ -12,8 +12,8 @@ import (
 	limiter "github.com/go-gost/x/limiter/traffic/wrapper"
 	metrics "github.com/go-gost/x/metrics/wrapper"
 
-	xnet "github.com/go-gost/x/internal/net"
-	"github.com/go-gost/x/internal/net/proxyproto"
+	xnet "github.com/gost-dev/x/internal/net"
+	"github.com/gost-dev/x/internal/net/proxyproto"
 	"github.com/go-gost/x/registry"
 )
 

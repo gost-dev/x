@@ -8,7 +8,7 @@ import (
 	"github.com/go-gost/core/dialer"
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
-	xdtls "github.com/go-gost/x/internal/util/dtls"
+	xdtls "github.com/gost-dev/x/internal/util/dtls"
 	"github.com/go-gost/x/registry"
 	"github.com/pion/dtls/v2"
 )

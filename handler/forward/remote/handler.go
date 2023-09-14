@@ -18,8 +18,8 @@ import (
 	"github.com/go-gost/core/logger"
 	mdata "github.com/go-gost/core/metadata"
 	mdutil "github.com/go-gost/core/metadata/util"
-	xnet "github.com/go-gost/x/internal/net"
-	"github.com/go-gost/x/internal/util/forward"
+	xnet "github.com/gost-dev/x/internal/net"
+	"github.com/gost-dev/x/internal/util/forward"
 	"github.com/go-gost/x/registry"
 )
 

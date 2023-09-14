@@ -17,8 +17,8 @@ import (
 	"github.com/go-gost/core/handler"
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
-	xnet "github.com/go-gost/x/internal/net"
-	"github.com/go-gost/x/internal/util/forward"
+	xnet "github.com/gost-dev/x/internal/net"
+	"github.com/gost-dev/x/internal/util/forward"
 	"github.com/go-gost/x/registry"
 )
 

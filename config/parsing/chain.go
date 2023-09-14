@@ -16,7 +16,7 @@ import (
 	auther "github.com/go-gost/x/auth"
 	xchain "github.com/go-gost/x/chain"
 	"github.com/go-gost/x/config"
-	tls_util "github.com/go-gost/x/internal/util/tls"
+	tls_util "github.com/gost-dev/x/internal/util/tls"
 	mdx "github.com/go-gost/x/metadata"
 	"github.com/go-gost/x/registry"
 )

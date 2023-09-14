@@ -10,7 +10,7 @@ import (
 
 	"github.com/go-gost/core/common/bufpool"
 	"github.com/go-gost/core/logger"
-	tun_util "github.com/go-gost/x/internal/util/tun"
+	tun_util "github.com/gost-dev/x/internal/util/tun"
 	"github.com/songgao/water/waterutil"
 	"golang.org/x/net/ipv4"
 	"golang.org/x/net/ipv6"

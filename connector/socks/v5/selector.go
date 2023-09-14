@@ -7,7 +7,7 @@ import (
 
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/gosocks5"
-	"github.com/go-gost/x/internal/util/socks"
+	"github.com/gost-dev/x/internal/util/socks"
 )
 
 type clientSelector struct {

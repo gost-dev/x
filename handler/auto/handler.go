@@ -11,7 +11,7 @@ import (
 	md "github.com/go-gost/core/metadata"
 	"github.com/go-gost/gosocks4"
 	"github.com/go-gost/gosocks5"
-	netpkg "github.com/go-gost/x/internal/net"
+	netpkg "github.com/gost-dev/x/internal/net"
 	"github.com/go-gost/x/registry"
 )
 

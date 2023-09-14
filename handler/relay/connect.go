@@ -10,8 +10,8 @@ import (
 
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/relay"
-	xnet "github.com/go-gost/x/internal/net"
-	sx "github.com/go-gost/x/internal/util/selector"
+	xnet "github.com/gost-dev/x/internal/net"
+	sx "github.com/gost-dev/x/internal/util/selector"
 )
 
 func (h *relayHandler) handleConnect(ctx context.Context, conn net.Conn, network, address string, log logger.Logger) error {

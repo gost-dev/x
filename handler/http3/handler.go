@@ -13,7 +13,7 @@ import (
 	"github.com/go-gost/core/handler"
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
-	sx "github.com/go-gost/x/internal/util/selector"
+	sx "github.com/gost-dev/x/internal/util/selector"
 	"github.com/go-gost/x/registry"
 )
 

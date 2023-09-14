@@ -107,3 +107,11 @@ require (
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
+
+replace github.com/go-gost/core => github.com/gost-dev/core v0.0.0-20230914034855-eaffcf97d182
+
+replace github.com/go-gost/gosocks5 => github.com/gost-dev/gosocks5 v0.0.0-20230914032855-99c466837679
+
+replace github.com/go-gost/relay => github.com/gost-dev/relay v0.0.0-20230914031411-48fbef7fecda
+
+replace github.com/go-gost/tls-dissector => github.com/gost-dev/tls-dissector v0.0.0-20230914040412-86a6040d3bd1

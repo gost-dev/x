@@ -209,8 +209,8 @@ github.com/gost-dev/relay v0.0.0-20230914031411-48fbef7fecda h1:Rk3kpH622V+hub5r
 github.com/gost-dev/relay v0.0.0-20230914031411-48fbef7fecda/go.mod h1:rPSOxO8KekwNuIfbicswzDZeJKENNm7QwHG5xQsvoC8=
 github.com/gost-dev/tls-dissector v0.0.0-20230914040412-86a6040d3bd1 h1:LZmZ057tDFayWQ+5QqsnRECDgVC9ZQ1Ek6ATN7WQ8Bc=
 github.com/gost-dev/tls-dissector v0.0.0-20230914040412-86a6040d3bd1/go.mod h1:jI+LKSa7XJ1gf4Tv44J/HlYrDTUlg1bxuco2vDky2Dc=
-github.com/gost-dev/x v0.0.0-20230916103637-60f595fed83f h1:5bjn7PMHMuw+8KmgqsU+Zm3rZWEEpypCiqGjnEUng9M=
-github.com/gost-dev/x v0.0.0-20230916103637-60f595fed83f/go.mod h1:PkTiL458q4Ly5I0CnrlZAjAa/2q/qOHf6INPYZfUYnk=
+github.com/gost-dev/x v1.0.0 h1:1MTuh1IK9Yu7SGVa2bWzGLsBbJbfw5H2cdzagLS/uo8=
+github.com/gost-dev/x v1.0.0/go.mod h1:w4j/l1injbs6owgtqfg0wDGfdZU7/bhCMjRlAToV64c=
 github.com/hashicorp/golang-lru v0.5.0/go.mod h1:/m3WP610KZHVQ1SGc6re/UDhFvYD7pJ4Ao+sR/qLZy8=
 github.com/hashicorp/golang-lru v0.5.1/go.mod h1:/m3WP610KZHVQ1SGc6re/UDhFvYD7pJ4Ao+sR/qLZy8=
 github.com/hashicorp/hcl v1.0.0 h1:0Anlzjpi4vEasTeNFn2mLJgTSwt0+6sfsiTG8qcWGx4=

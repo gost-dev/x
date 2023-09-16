@@ -7,11 +7,11 @@ import (
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
 	admission "github.com/go-gost/x/admission/wrapper"
-	xnet "github.com/gost-dev/x/internal/net"
-	pht_util "github.com/gost-dev/x/internal/util/pht"
 	limiter "github.com/go-gost/x/limiter/traffic/wrapper"
 	metrics "github.com/go-gost/x/metrics/wrapper"
 	"github.com/go-gost/x/registry"
+	xnet "github.com/gost-dev/x/extra/net"
+	pht_util "github.com/gost-dev/x/extra/util/pht"
 	"github.com/quic-go/quic-go"
 )
 

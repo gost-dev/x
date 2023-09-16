@@ -5,7 +5,7 @@ import (
 
 	mdata "github.com/go-gost/core/metadata"
 	mdutil "github.com/go-gost/core/metadata/util"
-	ssh_util "github.com/gost-dev/x/internal/util/ssh"
+	ssh_util "github.com/gost-dev/x/extra/util/ssh"
 	"golang.org/x/crypto/ssh"
 )
 

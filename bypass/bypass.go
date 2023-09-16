@@ -11,8 +11,8 @@ import (
 
 	bypass_pkg "github.com/go-gost/core/bypass"
 	"github.com/go-gost/core/logger"
-	"github.com/gost-dev/x/internal/loader"
-	"github.com/gost-dev/x/internal/matcher"
+	"github.com/gost-dev/x/extra/loader"
+	"github.com/gost-dev/x/extra/matcher"
 	"google.golang.org/grpc"
 )
 

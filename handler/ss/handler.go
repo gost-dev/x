@@ -10,10 +10,10 @@ import (
 	"github.com/go-gost/core/handler"
 	md "github.com/go-gost/core/metadata"
 	"github.com/go-gost/gosocks5"
-	netpkg "github.com/gost-dev/x/internal/net"
-	sx "github.com/gost-dev/x/internal/util/selector"
-	"github.com/gost-dev/x/internal/util/ss"
 	"github.com/go-gost/x/registry"
+	netpkg "github.com/gost-dev/x/extra/net"
+	sx "github.com/gost-dev/x/extra/util/selector"
+	"github.com/gost-dev/x/extra/util/ss"
 	"github.com/shadowsocks/go-shadowsocks2/core"
 )
 

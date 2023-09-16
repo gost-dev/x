@@ -9,7 +9,7 @@ import (
 
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/relay"
-	netpkg "github.com/gost-dev/x/internal/net"
+	netpkg "github.com/gost-dev/x/extra/net"
 )
 
 func (h *relayHandler) handleForward(ctx context.Context, conn net.Conn, network string, log logger.Logger) error {

@@ -14,9 +14,9 @@ import (
 	md "github.com/go-gost/core/metadata"
 	"github.com/go-gost/core/service"
 	"github.com/go-gost/relay"
-	xnet "github.com/gost-dev/x/internal/net"
 	"github.com/go-gost/x/registry"
 	xservice "github.com/go-gost/x/service"
+	xnet "github.com/gost-dev/x/extra/net"
 )
 
 var (

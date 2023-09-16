@@ -11,14 +11,14 @@ import (
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
 	admission "github.com/go-gost/x/admission/wrapper"
-	xnet "github.com/gost-dev/x/internal/net"
-	"github.com/gost-dev/x/internal/net/proxyproto"
-	ws_util "github.com/gost-dev/x/internal/util/ws"
 	climiter "github.com/go-gost/x/limiter/conn/wrapper"
 	limiter "github.com/go-gost/x/limiter/traffic/wrapper"
 	metrics "github.com/go-gost/x/metrics/wrapper"
 	"github.com/go-gost/x/registry"
 	"github.com/gorilla/websocket"
+	xnet "github.com/gost-dev/x/extra/net"
+	"github.com/gost-dev/x/extra/net/proxyproto"
+	ws_util "github.com/gost-dev/x/extra/util/ws"
 	"github.com/xtaci/smux"
 )
 

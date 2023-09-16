@@ -9,8 +9,8 @@ import (
 	"github.com/go-gost/core/connector"
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/gosocks5"
-	"github.com/gost-dev/x/internal/util/mux"
-	"github.com/gost-dev/x/internal/util/socks"
+	"github.com/gost-dev/x/extra/util/mux"
+	"github.com/gost-dev/x/extra/util/socks"
 )
 
 // Bind implements connector.Binder.

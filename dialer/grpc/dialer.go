@@ -7,8 +7,8 @@ import (
 
 	"github.com/go-gost/core/dialer"
 	md "github.com/go-gost/core/metadata"
-	pb "github.com/gost-dev/x/internal/util/grpc/proto"
 	"github.com/go-gost/x/registry"
+	pb "github.com/gost-dev/x/extra/util/grpc/proto"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/backoff"
 	"google.golang.org/grpc/credentials"

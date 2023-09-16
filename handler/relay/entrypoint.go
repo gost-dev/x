@@ -18,14 +18,14 @@ import (
 	md "github.com/go-gost/core/metadata"
 	"github.com/go-gost/relay"
 	admission "github.com/go-gost/x/admission/wrapper"
-	netpkg "github.com/gost-dev/x/internal/net"
-	xnet "github.com/gost-dev/x/internal/net"
-	"github.com/gost-dev/x/internal/net/proxyproto"
-	"github.com/gost-dev/x/internal/util/forward"
-	"github.com/gost-dev/x/internal/util/mux"
 	climiter "github.com/go-gost/x/limiter/conn/wrapper"
 	limiter "github.com/go-gost/x/limiter/traffic/wrapper"
 	metrics "github.com/go-gost/x/metrics/wrapper"
+	netpkg "github.com/gost-dev/x/extra/net"
+	xnet "github.com/gost-dev/x/extra/net"
+	"github.com/gost-dev/x/extra/net/proxyproto"
+	"github.com/gost-dev/x/extra/util/forward"
+	"github.com/gost-dev/x/extra/util/mux"
 )
 
 type tcpListener struct {

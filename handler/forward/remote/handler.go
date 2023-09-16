@@ -18,9 +18,9 @@ import (
 	"github.com/go-gost/core/logger"
 	mdata "github.com/go-gost/core/metadata"
 	mdutil "github.com/go-gost/core/metadata/util"
-	xnet "github.com/gost-dev/x/internal/net"
-	"github.com/gost-dev/x/internal/util/forward"
 	"github.com/go-gost/x/registry"
+	xnet "github.com/gost-dev/x/extra/net"
+	"github.com/gost-dev/x/extra/util/forward"
 )
 
 func init() {

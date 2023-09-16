@@ -9,8 +9,8 @@ import (
 	"github.com/go-gost/core/dialer"
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
-	quic_util "github.com/gost-dev/x/internal/util/quic"
 	"github.com/go-gost/x/registry"
+	quic_util "github.com/gost-dev/x/extra/util/quic"
 	"github.com/quic-go/quic-go"
 )
 

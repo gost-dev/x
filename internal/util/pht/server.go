@@ -17,7 +17,7 @@ import (
 
 	"github.com/go-gost/core/common/bufpool"
 	"github.com/go-gost/core/logger"
-	xnet "github.com/gost-dev/x/internal/net"
+	xnet "github.com/gost-dev/x/extra/net"
 	"github.com/quic-go/quic-go"
 	"github.com/quic-go/quic-go/http3"
 	"github.com/rs/xid"

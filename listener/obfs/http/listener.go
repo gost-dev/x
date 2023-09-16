@@ -12,9 +12,9 @@ import (
 	limiter "github.com/go-gost/x/limiter/traffic/wrapper"
 	metrics "github.com/go-gost/x/metrics/wrapper"
 
-	xnet "github.com/gost-dev/x/internal/net"
-	"github.com/gost-dev/x/internal/net/proxyproto"
 	"github.com/go-gost/x/registry"
+	xnet "github.com/gost-dev/x/extra/net"
+	"github.com/gost-dev/x/extra/net/proxyproto"
 )
 
 func init() {

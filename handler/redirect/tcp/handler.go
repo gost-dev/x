@@ -19,9 +19,9 @@ import (
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
 	dissector "github.com/go-gost/tls-dissector"
-	xio "github.com/gost-dev/x/internal/io"
-	netpkg "github.com/gost-dev/x/internal/net"
 	"github.com/go-gost/x/registry"
+	xio "github.com/gost-dev/x/extra/io"
+	netpkg "github.com/gost-dev/x/extra/net"
 )
 
 func init() {

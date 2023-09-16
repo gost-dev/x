@@ -11,8 +11,8 @@ import (
 	"github.com/go-gost/core/chain"
 	"github.com/go-gost/core/handler"
 	md "github.com/go-gost/core/metadata"
-	tun_util "github.com/gost-dev/x/internal/util/tun"
 	"github.com/go-gost/x/registry"
+	tun_util "github.com/gost-dev/x/extra/util/tun"
 	"github.com/songgao/water/waterutil"
 )
 

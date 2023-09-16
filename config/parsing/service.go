@@ -17,10 +17,10 @@ import (
 	"github.com/go-gost/core/service"
 	xchain "github.com/go-gost/x/chain"
 	"github.com/go-gost/x/config"
-	tls_util "github.com/gost-dev/x/internal/util/tls"
 	"github.com/go-gost/x/metadata"
 	"github.com/go-gost/x/registry"
 	xservice "github.com/go-gost/x/service"
+	tls_util "github.com/gost-dev/x/extra/util/tls"
 )
 
 func ParseService(cfg *config.ServiceConfig) (service.Service, error) {

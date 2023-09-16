@@ -8,11 +8,11 @@ import (
 	"github.com/go-gost/core/listener"
 	"github.com/go-gost/core/logger"
 	mdata "github.com/go-gost/core/metadata"
-	xnet "github.com/gost-dev/x/internal/net"
 	limiter "github.com/go-gost/x/limiter/traffic/wrapper"
 	mdx "github.com/go-gost/x/metadata"
 	metrics "github.com/go-gost/x/metrics/wrapper"
 	"github.com/go-gost/x/registry"
+	xnet "github.com/gost-dev/x/extra/net"
 )
 
 func init() {

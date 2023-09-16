@@ -10,8 +10,8 @@ import (
 
 	"github.com/go-gost/core/auth"
 	"github.com/go-gost/core/logger"
-	"github.com/gost-dev/x/internal/loader"
 	xlogger "github.com/go-gost/x/logger"
+	"github.com/gost-dev/x/extra/loader"
 	"google.golang.org/grpc"
 )
 

@@ -8,9 +8,9 @@ import (
 	"github.com/go-gost/core/listener"
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
-	xnet "github.com/gost-dev/x/internal/net"
 	mdx "github.com/go-gost/x/metadata"
 	"github.com/go-gost/x/registry"
+	xnet "github.com/gost-dev/x/extra/net"
 	"github.com/quic-go/quic-go"
 	"github.com/quic-go/quic-go/http3"
 )

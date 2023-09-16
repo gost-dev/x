@@ -12,7 +12,7 @@ import (
 	"github.com/alecthomas/units"
 	limiter "github.com/go-gost/core/limiter/traffic"
 	"github.com/go-gost/core/logger"
-	"github.com/gost-dev/x/internal/loader"
+	"github.com/gost-dev/x/extra/loader"
 	"github.com/patrickmn/go-cache"
 	"github.com/yl2chen/cidranger"
 )

@@ -12,7 +12,7 @@ import (
 
 	limiter "github.com/go-gost/core/limiter/rate"
 	"github.com/go-gost/core/logger"
-	"github.com/gost-dev/x/internal/loader"
+	"github.com/gost-dev/x/extra/loader"
 	"github.com/yl2chen/cidranger"
 )
 

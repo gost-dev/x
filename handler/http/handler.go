@@ -21,9 +21,9 @@ import (
 	"github.com/go-gost/core/handler"
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
-	netpkg "github.com/gost-dev/x/internal/net"
-	sx "github.com/gost-dev/x/internal/util/selector"
 	"github.com/go-gost/x/registry"
+	netpkg "github.com/gost-dev/x/extra/net"
+	sx "github.com/gost-dev/x/extra/util/selector"
 )
 
 func init() {

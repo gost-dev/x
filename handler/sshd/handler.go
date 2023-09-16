@@ -13,9 +13,9 @@ import (
 	"github.com/go-gost/core/handler"
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
-	netpkg "github.com/gost-dev/x/internal/net"
-	sshd_util "github.com/gost-dev/x/internal/util/sshd"
 	"github.com/go-gost/x/registry"
+	netpkg "github.com/gost-dev/x/extra/net"
+	sshd_util "github.com/gost-dev/x/extra/util/sshd"
 	"golang.org/x/crypto/ssh"
 )
 

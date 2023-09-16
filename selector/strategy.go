@@ -12,7 +12,7 @@ import (
 	"github.com/go-gost/core/metadata"
 	mdutil "github.com/go-gost/core/metadata/util"
 	"github.com/go-gost/core/selector"
-	sx "github.com/gost-dev/x/internal/util/selector"
+	sx "github.com/gost-dev/x/extra/util/selector"
 )
 
 type roundRobinStrategy[T any] struct {

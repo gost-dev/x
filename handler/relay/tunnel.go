@@ -9,8 +9,8 @@ import (
 
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/relay"
-	"github.com/gost-dev/x/internal/util/mux"
 	"github.com/google/uuid"
+	"github.com/gost-dev/x/extra/util/mux"
 )
 
 type Connector struct {

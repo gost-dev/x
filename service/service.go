@@ -15,8 +15,8 @@ import (
 	"github.com/go-gost/core/metrics"
 	"github.com/go-gost/core/recorder"
 	"github.com/go-gost/core/service"
-	sx "github.com/gost-dev/x/internal/util/selector"
 	xmetrics "github.com/go-gost/x/metrics"
+	sx "github.com/gost-dev/x/extra/util/selector"
 	"github.com/rs/xid"
 )
 

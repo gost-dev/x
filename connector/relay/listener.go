@@ -8,8 +8,8 @@ import (
 	"github.com/go-gost/core/logger"
 	mdata "github.com/go-gost/core/metadata"
 	"github.com/go-gost/relay"
-	"github.com/gost-dev/x/internal/util/mux"
 	mdx "github.com/go-gost/x/metadata"
+	"github.com/gost-dev/x/extra/util/mux"
 )
 
 type bindListener struct {

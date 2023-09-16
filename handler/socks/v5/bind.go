@@ -8,7 +8,7 @@ import (
 
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/gosocks5"
-	netpkg "github.com/gost-dev/x/internal/net"
+	netpkg "github.com/gost-dev/x/extra/net"
 )
 
 func (h *socks5Handler) handleBind(ctx context.Context, conn net.Conn, network, address string, log logger.Logger) error {

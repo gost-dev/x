@@ -9,8 +9,8 @@ import (
 	"github.com/go-gost/core/connector"
 	md "github.com/go-gost/core/metadata"
 	"github.com/go-gost/relay"
-	relay_util "github.com/gost-dev/x/internal/util/relay"
 	"github.com/go-gost/x/registry"
+	relay_util "github.com/gost-dev/x/extra/util/relay"
 )
 
 func init() {

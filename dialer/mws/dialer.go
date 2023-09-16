@@ -10,9 +10,9 @@ import (
 
 	"github.com/go-gost/core/dialer"
 	md "github.com/go-gost/core/metadata"
-	ws_util "github.com/gost-dev/x/internal/util/ws"
 	"github.com/go-gost/x/registry"
 	"github.com/gorilla/websocket"
+	ws_util "github.com/gost-dev/x/extra/util/ws"
 	"github.com/xtaci/smux"
 )
 

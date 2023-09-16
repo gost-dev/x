@@ -9,8 +9,8 @@ import (
 	"github.com/go-gost/core/chain"
 	"github.com/go-gost/core/handler"
 	md "github.com/go-gost/core/metadata"
-	netpkg "github.com/gost-dev/x/internal/net"
 	"github.com/go-gost/x/registry"
+	netpkg "github.com/gost-dev/x/extra/net"
 )
 
 func init() {

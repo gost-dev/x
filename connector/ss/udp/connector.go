@@ -8,9 +8,9 @@ import (
 
 	"github.com/go-gost/core/connector"
 	md "github.com/go-gost/core/metadata"
-	"github.com/gost-dev/x/internal/util/relay"
-	"github.com/gost-dev/x/internal/util/ss"
 	"github.com/go-gost/x/registry"
+	"github.com/gost-dev/x/extra/util/relay"
+	"github.com/gost-dev/x/extra/util/ss"
 	"github.com/shadowsocks/go-shadowsocks2/core"
 )
 

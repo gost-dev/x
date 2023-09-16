@@ -8,9 +8,9 @@ import (
 
 	"github.com/go-gost/core/metadata"
 	"github.com/go-gost/core/metrics"
-	xnet "github.com/gost-dev/x/internal/net"
-	"github.com/gost-dev/x/internal/net/udp"
 	xmetrics "github.com/go-gost/x/metrics"
+	xnet "github.com/gost-dev/x/extra/net"
+	"github.com/gost-dev/x/extra/net/udp"
 )
 
 var (

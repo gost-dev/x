@@ -116,4 +116,4 @@ replace github.com/go-gost/relay => github.com/gost-dev/relay v0.0.0-20230914031
 
 replace github.com/go-gost/tls-dissector => github.com/gost-dev/tls-dissector v0.0.0-20230914040412-86a6040d3bd1
 
-replace github.com/go-gost/x => github.com/gost-dev/x v1.0.0
+replace github.com/go-gost/x => github.com/gost-dev/x v1.0.1

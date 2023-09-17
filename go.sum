@@ -208,8 +208,8 @@ github.com/googleapis/gax-go/v2 v2.0.5/go.mod h1:DWXyrwAJ9X0FpwwEdw+IPEYBICEFu5m
 github.com/googleapis/google-cloud-go-testing v0.0.0-20200911160855-bcd43fbb19e8/go.mod h1:dvDLG8qkwmyD9a/MJJN3XJcT3xFxOKAvTZGvuZmac9g=
 github.com/gorilla/websocket v1.5.0 h1:PPwGk2jz7EePpoHN/+ClbZu8SPxiqlu12wZP/3sWmnc=
 github.com/gorilla/websocket v1.5.0/go.mod h1:YR8l580nyteQvAITg2hZ9XVh4b55+EU/adAjf1fMHhE=
-github.com/gost-dev/core v0.0.0-20230914035023-2496cb0cfb10 h1:FfA6Fviqoq99AZJjIb2TshagpYvE63lY8WMKVGNjbMM=
-github.com/gost-dev/core v0.0.0-20230914035023-2496cb0cfb10/go.mod h1:ghOI5ZLbJ42IBvBD9E3cr8UI99SFntdCgEjgc0ALPDk=
+github.com/gost-dev/core v0.0.0-20230917070019-6039807cf480 h1:Jh84+7wqASY+7UOWGAgUiUWafFqixB10OxwDpnQrImI=
+github.com/gost-dev/core v0.0.0-20230917070019-6039807cf480/go.mod h1:ghOI5ZLbJ42IBvBD9E3cr8UI99SFntdCgEjgc0ALPDk=
 github.com/gost-dev/gosocks5 v0.0.0-20230914032855-99c466837679 h1:K6KvtOoc2rkPX7ICnclpauUWRVZm1HUIXwtyQyUjp1A=
 github.com/gost-dev/gosocks5 v0.0.0-20230914032855-99c466837679/go.mod h1:B1WKy/KOGTcCCDfGdwf8TcAvW5cGTIIW1pFHMxIPBY8=
 github.com/gost-dev/relay v0.0.0-20230917072712-e941431d7098 h1:EiDU6HGYoOAH0jty/BS8rizWXagwUrg3DODm7FEkzZw=

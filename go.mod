@@ -115,7 +115,7 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
 
-replace github.com/go-gost/core => github.com/gost-dev/core v0.0.0-20230914035023-2496cb0cfb10
+replace github.com/go-gost/core => github.com/gost-dev/core v0.0.0-20230917070019-6039807cf480
 
 replace github.com/go-gost/gosocks5 => github.com/gost-dev/gosocks5 v0.0.0-20230914032855-99c466837679
 

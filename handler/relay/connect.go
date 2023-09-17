@@ -4,17 +4,27 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"io"
 	"net"
 	"strconv"
 	"time"
 
 	"github.com/go-gost/core/logger"
 	"github.com/go-gost/relay"
-	xnet "github.com/gost-dev/x/extra/net"
-	sx "github.com/gost-dev/x/extra/util/selector"
+
+	xnet "github.com/go-gost/x/extra/net"
+	sx "github.com/go-gost/x/extra/util/selector"
+	serial_util "github.com/go-gost/x/extra/util/serial"
+	goserial "github.com/tarm/serial"
 )
 
-func (h *relayHandler) handleConnect(ctx context.Context, conn net.Conn, network, address string, log logger.Logger) error {
+func (h *relayHandler) handleConnect(ctx context.Context, conn net.Conn, network, address string, log logger.Logger) (err error) {
+	if network == "unix" || network == "serial" {
+		if host, _, _ := net.SplitHostPort(address); host != "" {
+			address = host
+		}
+	}
+
 	log = log.WithFields(map[string]any{
 		"dst": fmt.Sprintf("%s/%s", address, network),
 		"cmd": "connect",
@@ -30,23 +40,33 @@ func (h *relayHandler) handleConnect(ctx context.Context, conn net.Conn, network
 	if address == "" {
 		resp.Status = relay.StatusBadRequest
 		resp.WriteTo(conn)
-		err := errors.New("target not specified")
+		err = errors.New("target not specified")
 		log.Error(err)
-		return err
+		return
 	}
 
 	if h.options.Bypass != nil && h.options.Bypass.Contains(ctx, address) {
 		log.Debug("bypass: ", address)
 		resp.Status = relay.StatusForbidden
-		_, err := resp.WriteTo(conn)
-		return err
+		_, err = resp.WriteTo(conn)
+		return
 	}
 
 	switch h.md.hash {
 	case "host":
 		ctx = sx.ContextWithHash(ctx, &sx.Hash{Source: address})
 	}
-	cc, err := h.router.Dial(ctx, network, address)
+
+	var cc io.ReadWriteCloser
+
+	switch network {
+	case "unix":
+		cc, err = (&net.Dialer{}).DialContext(ctx, "unix", address)
+	case "serial":
+		cc, err = goserial.OpenPort(serial_util.ParseConfigFromAddr(address))
+	default:
+		cc, err = h.router.Dial(ctx, network, address)
+	}
 	if err != nil {
 		resp.Status = relay.StatusNetworkUnreachable
 		resp.WriteTo(conn)

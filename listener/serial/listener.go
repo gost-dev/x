@@ -8,10 +8,10 @@ import (
 	"github.com/go-gost/core/listener"
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
-	serial_util "github.com/go-gost/x/internal/util/serial"
 	limiter "github.com/go-gost/x/limiter/traffic/wrapper"
 	metrics "github.com/go-gost/x/metrics/wrapper"
 	"github.com/go-gost/x/registry"
+	serial_util "github.com/gost-dev/x/extra/util/serial"
 	goserial "github.com/tarm/serial"
 )
 

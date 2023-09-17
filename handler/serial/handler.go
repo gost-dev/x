@@ -11,9 +11,9 @@ import (
 	"github.com/go-gost/core/handler"
 	"github.com/go-gost/core/logger"
 	md "github.com/go-gost/core/metadata"
-	xnet "github.com/go-gost/x/internal/net"
-	serial_util "github.com/go-gost/x/internal/util/serial"
 	"github.com/go-gost/x/registry"
+	xnet "github.com/gost-dev/x/extra/net"
+	serial_util "github.com/gost-dev/x/extra/util/serial"
 	goserial "github.com/tarm/serial"
 )
 

@@ -212,8 +212,8 @@ github.com/gost-dev/core v0.0.0-20230914035023-2496cb0cfb10 h1:FfA6Fviqoq99AZJjI
 github.com/gost-dev/core v0.0.0-20230914035023-2496cb0cfb10/go.mod h1:ghOI5ZLbJ42IBvBD9E3cr8UI99SFntdCgEjgc0ALPDk=
 github.com/gost-dev/gosocks5 v0.0.0-20230914032855-99c466837679 h1:K6KvtOoc2rkPX7ICnclpauUWRVZm1HUIXwtyQyUjp1A=
 github.com/gost-dev/gosocks5 v0.0.0-20230914032855-99c466837679/go.mod h1:B1WKy/KOGTcCCDfGdwf8TcAvW5cGTIIW1pFHMxIPBY8=
-github.com/gost-dev/relay v0.0.0-20230914031411-48fbef7fecda h1:Rk3kpH622V+hub5raLQhUqKIKGawxny5Lub/qV6Gqew=
-github.com/gost-dev/relay v0.0.0-20230914031411-48fbef7fecda/go.mod h1:rPSOxO8KekwNuIfbicswzDZeJKENNm7QwHG5xQsvoC8=
+github.com/gost-dev/relay v0.0.0-20230917072712-e941431d7098 h1:EiDU6HGYoOAH0jty/BS8rizWXagwUrg3DODm7FEkzZw=
+github.com/gost-dev/relay v0.0.0-20230917072712-e941431d7098/go.mod h1:rPSOxO8KekwNuIfbicswzDZeJKENNm7QwHG5xQsvoC8=
 github.com/gost-dev/tls-dissector v0.0.0-20230914040412-86a6040d3bd1 h1:LZmZ057tDFayWQ+5QqsnRECDgVC9ZQ1Ek6ATN7WQ8Bc=
 github.com/gost-dev/tls-dissector v0.0.0-20230914040412-86a6040d3bd1/go.mod h1:jI+LKSa7XJ1gf4Tv44J/HlYrDTUlg1bxuco2vDky2Dc=
 github.com/gost-dev/x v1.0.3-0.20230917074559-edbb3d6e7009 h1:o04zG3rGN4DGSzWo+ngoA/zVHv83+XHVFj0DXRYkd00=

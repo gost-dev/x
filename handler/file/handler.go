@@ -4,6 +4,7 @@ import (
 	"context"
 	"net"
 	"net/http"
+	"path/filepath"
 	"sync"
 	"time"
 
@@ -80,6 +81,13 @@ func (h *fileHandler) handleFunc(w http.ResponseWriter, r *http.Request) {
 
 	log := h.options.Logger
 	start := time.Now()
+
+	// Get the file path from the requested URL
+	filePath := filepath.Join(".", r.URL.Path)
+
+	// Determine the content type based on the file extension
+	contentType := http.DetectContentType([]byte(filePath))
+	log.Infof("%s", contentType)
 
 	h.handler.ServeHTTP(w, r)
 

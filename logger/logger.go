@@ -96,6 +96,7 @@ func NewLogger(opts ...Option) logger.Logger {
 
 // WithFields adds new fields to log.
 func (l *logrusLogger) WithFields(fields map[string]any) logger.Logger {
+	// Ensure a new logger instance is created so the original is not modified.
 	return &logrusLogger{
 		logger: l.logger.WithFields(logrus.Fields(fields)),
 	}
@@ -168,13 +169,19 @@ func (l *logrusLogger) GetLevel() logger.LogLevel {
 }
 
 func (l *logrusLogger) IsLevelEnabled(level logger.LogLevel) bool {
-	lvl, _ := logrus.ParseLevel(string(level))
+	lvl, err := logrus.ParseLevel(string(level))
+	if err != nil {
+		// If the level string is invalid, it's not enabled.
+		return false
+	}
 	return l.logger.Logger.IsLevelEnabled(lvl)
 }
 
 func (l *logrusLogger) log(level logrus.Level, args ...any) {
 	lg := l.logger
-	if l.logger.Logger.IsLevelEnabled(logrus.DebugLevel) {
+	// Add caller info only for Trace and Debug message levels.
+	// logrus levels: Panic=0, Fatal=1, Error=2, Warn=3, Info=4, Debug=5, Trace=6
+	if level >= logrus.DebugLevel { 
 		lg = lg.WithField("caller", l.caller(3))
 	}
 	lg.Log(level, args...)
@@ -182,7 +189,9 @@ func (l *logrusLogger) log(level logrus.Level, args ...any) {
 
 func (l *logrusLogger) logf(level logrus.Level, format string, args ...any) {
 	lg := l.logger
-	if l.logger.Logger.IsLevelEnabled(logrus.DebugLevel) {
+	// Add caller info only for Trace and Debug message levels.
+	// logrus levels: Panic=0, Fatal=1, Error=2, Warn=3, Info=4, Debug=5, Trace=6
+	if level >= logrus.DebugLevel {
 		lg = lg.WithField("caller", l.caller(3))
 	}
 	lg.Logf(level, format, args...)

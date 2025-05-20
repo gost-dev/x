@@ -7,7 +7,8 @@ import (
 	mdutil "github.com/go-gost/x/metadata/util"
 )
 
-type metadata struct {
+// grpcMetadataConfig holds parsed gRPC-specific metadata.
+type grpcMetadataConfig struct {
 	insecure                     bool
 	host                         string
 	path                         string
@@ -19,6 +20,7 @@ type metadata struct {
 }
 
 func (d *grpcDialer) parseMetadata(md mdata.Metadata) (err error) {
+	// d.md is now of type grpcMetadataConfig
 	d.md.insecure = mdutil.GetBool(md, "grpc.insecure", "grpcInsecure", "insecure")
 	d.md.host = mdutil.GetString(md, "grpc.authority", "grpc.host", "host")
 	d.md.path = mdutil.GetString(md, "grpc.path", "path")

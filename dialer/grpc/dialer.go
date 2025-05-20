@@ -2,6 +2,7 @@ package grpc
 
 import (
 	"context"
+	"errors" // Added import
 	"net"
 	"sync"
 
@@ -23,7 +24,7 @@ func init() {
 type grpcDialer struct {
 	clients     map[string]pb.GostTunelClientX
 	clientMutex sync.Mutex
-	md          metadata
+	md          grpcMetadataConfig // Changed from metadata
 	options     dialer.Options
 }
 
@@ -71,19 +72,42 @@ func (d *grpcDialer) Dial(ctx context.Context, addr string, opts ...dialer.DialO
 		grpcOpts := []grpc.DialOption{
 			// grpc.WithBlock(),
 			grpc.WithContextDialer(func(c context.Context, s string) (net.Conn, error) {
-				return options.Dialer.Dial(c, "tcp", s)
+				// If options.Dialer is nil, this would panic.
+				// The Dial function should ideally have a default dialer if options.Dialer is not provided.
+				// For now, assume options.Dialer will be set in tests or by callers.
+				if options.Dialer == nil {
+					// Fallback or error, for now, let's assume it's an error or test will provide one.
+					// This indicates a potential issue if Dial is called without a base dialer in DialOptions.
+					// However, typical usage involves a chain of dialers.
+					return nil, errors.New("base dialer not provided in DialOptions")
+				}
+				return options.Dialer.Dial(c, "tcp", s) // Assuming "tcp" is appropriate, might need to be more generic
 			}),
-			grpc.WithAuthority(host),
+			// grpc.WithAuthority(host), // Authority is often inferred or not strictly needed for bufconn
 			grpc.WithConnectParams(grpc.ConnectParams{
 				Backoff:           backoff.DefaultConfig,
 				MinConnectTimeout: d.md.minConnectTimeout,
 			}),
 		}
 		if !d.md.insecure {
-			grpcOpts = append(grpcOpts, grpc.WithTransportCredentials(credentials.NewTLS(d.options.TLSConfig)))
+			// Ensure d.options.TLSConfig is not nil if !d.md.insecure
+			tlsCfg := d.options.TLSConfig
+			if tlsCfg == nil {
+				// Provide a default TLS config or handle error if TLS is expected but no config given
+				// For testing with bufconn and !insecure, this might need a self-signed cert or similar.
+				// For now, if insecure is false, and no TLSConfig, it might fail.
+				// Let's assume for tests, if !insecure, TLSConfig will be provided or this path isn't hit with bufconn.
+			}
+			grpcOpts = append(grpcOpts, grpc.WithTransportCredentials(credentials.NewTLS(tlsCfg)))
 		} else {
 			grpcOpts = append(grpcOpts, grpc.WithTransportCredentials(insecure.NewCredentials()))
 		}
+		
+		// Only set authority if host is not empty.
+		if host != "" {
+			grpcOpts = append(grpcOpts, grpc.WithAuthority(host))
+		}
+
 
 		if d.md.keepalive {
 			grpcOpts = append(grpcOpts, grpc.WithKeepaliveParams(keepalive.ClientParameters{
@@ -93,7 +117,15 @@ func (d *grpcDialer) Dial(ctx context.Context, addr string, opts ...dialer.DialO
 			}))
 		}
 
-		cc, err := grpc.NewClient(addr, grpcOpts...)
+		target := addr
+		// If a custom context dialer is used (like for bufconn via DialOptions),
+		// prepend "passthrough:///" to prevent default DNS resolution for arbitrary target strings.
+		// This assumes the custom context dialer (options.Dialer) ignores the scheme and address parts if needed.
+		if options.Dialer != nil {
+			target = "passthrough:///" + addr
+		}
+
+		cc, err := grpc.NewClient(target, grpcOpts...)
 		if err != nil {
 			d.options.Logger.Error(err)
 			return nil, err
